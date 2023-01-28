@@ -78,6 +78,7 @@ public class WhatsappRepository {
         if(b==false)
             throw new Exception("You are not allowed to send message");
         groupMessageMap.get(group).add(message);
+        senderMap.put(message,sender);
         return groupMessageMap.get(group).size();
     }
     public String changeAdmin(User approver, User user, Group group) throws Exception{
