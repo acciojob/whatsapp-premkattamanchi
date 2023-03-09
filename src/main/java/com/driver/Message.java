@@ -1,6 +1,6 @@
 package com.driver;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Message {
     private int id;
