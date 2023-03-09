@@ -50,9 +50,7 @@ public class WhatsappRepository {
     }
     public int createMessage(String content){
         messageId++;
-        long millis=System.currentTimeMillis();
-        Date date =new Date(millis);
-        messageMap.put(messageId,new Message(messageId,content,date));
+        messageMap.put(messageId,new Message(messageId,content));
         return messageId;
     }
 

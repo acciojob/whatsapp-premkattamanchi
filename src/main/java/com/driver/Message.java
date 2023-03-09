@@ -7,10 +7,11 @@ public class Message {
     private String content;
     private Date timestamp;
 
-    public Message(int id, String content,Date date) {
+    public Message(int id, String content) {
         this.id = id;
         this.content = content;
-        this.timestamp =date;
+        long millis=System.currentTimeMillis();
+        this.timestamp =new Date(millis);
     }
 
     public int getId() {
